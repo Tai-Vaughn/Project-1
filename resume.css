@@ -1,0 +1,119 @@
+.container{
+    grid-gap: 15px;
+    height: 100%;
+    display: grid;
+    grid-template: repeat(12, 1fr)/ repeat(12, 1fr);
+    grid-template-areas: 
+
+    "t t t t t t t t t t t t"
+    ". . l l l r r r r r r ."
+    ;
+    
+}
+/* top pannel */
+.top{
+    height: 200px;  
+    grid-area: t; 
+    text-align: center;
+    background: rgb(110, 194, 159);
+    padding-top: 1em;
+}
+
+.inside{
+  margin: 0px  50px;
+  border: 1px solid #FFFFFF;
+  padding: 1em;
+  text-align: center;
+  vertical-align: center;
+}
+h1, p{
+    margin: 0px;
+}
+
+/* left pannel */
+.left{
+    grid-area: l;
+}
+
+.me{
+    height: 100px;
+    border-radius: 100px ;
+    
+}
+
+/* right pannel */
+.right{
+    grid-area: r ;
+}
+.box {
+    align-items: center;
+    justify-items: center;
+    background-color: beige;
+    color: black;
+
+  } 
+
+.Bio , .work_e , .edu {
+    border-bottom: 1px solid
+}
+
+.edu , .work_e{
+    display: grid;
+    grid-template: repeat(2 , 1fr) / repeat();
+    grid-template-areas: 
+    ' t t t  . . . . . '
+     'y  y y y  i i i i '
+}
+
+.title{
+    grid-area: t;
+}
+.year{
+    grid-area: y;
+}
+
+.info {
+    grid-area: i;
+}
+
+
+
+    @media screen and (min-width: 800px) {    /* half screan */
+        .inside{
+            margin: 0px  250px;
+        }
+
+        .me{
+            height: 200px;
+            border-radius: 100px ;
+            padding-left: 70px;
+        }
+
+    }
+
+
+    @media screen and (min-width: 1600px) {    /* fukk screen  */
+        .inside{
+            margin: 0px  720px;
+        }
+
+        .fa, p , .social-media{
+            padding-bottom: 10px;
+        }
+
+        .fa-globe{
+            border-bottom: 5px solid rgb(0, 0, 0);
+            padding-bottom: 7px;
+            padding-right: 350px;
+        }
+
+        .social-media{
+            height: 20px;
+            vertical-align: middle ;
+        }
+
+        .left{
+            grid-area: l;
+            height: 1fr;    
+        }
+    }
