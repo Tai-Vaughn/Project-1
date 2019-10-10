@@ -33,6 +33,7 @@ h1, p{
 /* left pannel */
 .left{
     grid-area: l;
+    height: 1fr;    
 }
 
 .me{
@@ -85,7 +86,25 @@ h1, p{
     grid-row: 3/4;
 }
 
-    @media screen and (min-width: 800px) {    /* half screan */
+.skill{
+    display: grid;
+    grid-template-areas: 
+    'h h h h . . . .'
+    'l l r r . . . .';
+}
+
+.head{
+    grid-area: h;
+}
+
+.left-list{
+ grid-area: l;
+}
+
+.right-list{
+    grid-area: r; 
+}
+    @media screen and (min-width: 800px) {    half screan
         .inside{
             margin: 0px  250px;
         }
@@ -99,7 +118,7 @@ h1, p{
     }
 
 
-    @media screen and (min-width: 1600px) {    /* fukk screen  */
+    @media screen and (min-width: 1600px) {    fukk screen 
         .inside{
             margin: 0px  720px;
         }
