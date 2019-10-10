@@ -33,7 +33,6 @@ h1, p{
 /* left pannel */
 .left{
     grid-area: l;
-    height: 1fr;    
 }
 
 .me{
@@ -104,7 +103,7 @@ h1, p{
 .right-list{
     grid-area: r; 
 }
-    @media screen and (min-width: 800px) {    half screan
+    @media screen and (min-width: 800px) {    /* half screan */
         .inside{
             margin: 0px  250px;
         }
@@ -118,7 +117,7 @@ h1, p{
     }
 
 
-    @media screen and (min-width: 1600px) {    fukk screen 
+    @media screen and (min-width: 1600px) {    /* fukk screen  */
         .inside{
             margin: 0px  720px;
         }
