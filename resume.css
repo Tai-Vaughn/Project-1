@@ -1,12 +1,12 @@
-.container{
+  .container{
     grid-gap: 15px;
     height: 100%;
     display: grid;
-    grid-template: repeat(12, 1fr)/ repeat(12, 1fr);
+    
     grid-template-areas: 
 
     "t t t t t t t t t t t t"
-    ". . l l l r r r r r r ."
+    ". . ..l l l r r r r.. ."
     ;
     
 }
@@ -57,26 +57,33 @@ h1, p{
     border-bottom: 1px solid
 }
 
-.edu , .work_e{
+.edu  {
     display: grid;
-    grid-template: repeat(2 , 1fr) / repeat();
-    grid-template-areas: 
-    ' t t t  . . . . . '
-     'y  y y y  i i i i '
+    grid-template: repeat(3 , 1fr) / repeat(2 , 1fr);
 }
 
-.title{
-    grid-area: t;
+.title-1{
+    grid-column: 1/2;
+    
 }
-.year{
-    grid-area: y;
-}
-
-.info {
-    grid-area: i;
+.year-1{
+    grid-column: 1/2;
 }
 
+.info-1{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
 
+.year-2{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.info-2{
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
 
     @media screen and (min-width: 800px) {    /* half screan */
         .inside{
